@@ -10,13 +10,6 @@ $(function(){
         });
     });
 
-    $('.col-md-3').mouseover(function(){
-        $(this).removeClass('col-md-3');
-        $(this).addClass('col-md-5');
-    }).mouseleave(function(){
-        $(this).removeClass('col-md-5');
-        $(this).addClass('col-md-3');
-    });
 
 });
 
