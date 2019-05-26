@@ -1,13 +1,170 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<title></title>
+	<title>AppleBacon</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="fixed-bg" >
+	<!-- nav -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<a class="navbar-brand" href="#">AppleBacon</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="bootstrap.js"></script>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item ">
+						<a class="nav-link" href="#outer">HOME </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#map">ACCESS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#news">NEWS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">CONTACT</a>
+					</li>
+
+				</ul>
+				
+			</div>
+		</nav>
+
+		<!-- 会社名 -->
+		<div id="outer">
+			<div id="inner">
+				<h1>AppleBacon</h1>
+				<h2>すべては、挑戦から</h2>
+			</div>
+		</div>
+
+		<!-- カード -->
+		<div class="container fadein " id="about">
+			<div class="row mt-5">
+				<div class="card col-md-3 offset-md-1 " style="width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="card-link">Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container space fadein">
+			<div class="row mt-5">
+				<div class="card col-md-3 offset-md-8" style="width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="card-link">Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container space fadein">
+			<div class="row mt-5">
+				<div class="card col-md-3 offset-md-1" style="width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="card-link">Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- map -->
+		<div class="container space fadein" id="map">
+			<div class="row mt-5">
+				<div class="card col-md-5 offset-md-6">
+			<h2>ACCESS</h2>
+					<p>Adress:Japan Osaka</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.49108496478!2d135.6633976152361!3d34.84388598039796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60011c90c8b29069%3A0xd73339369eed914!2z54mn6YeO6aeF!5e0!3m2!1sja!2sph!4v1558695822055!5m2!1sja!2sph" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+
+		<!-- news -->
+		<div class="container space fadein" id="news">
+			<div class="row mt-5">
+				<div class="card col-md-3 offset-md-1" style="width: 18rem;">
+					<div class="card-body">
+						<h2 class="card-title">NEWS</h2>
+						<p class="card-text">2019.05.25 &emsp;<a href="#" class="">お知らせ更新</a></p>
+						<p class="card-text mt-2">2019.05.25 &emsp;<a href="#" class="">お知らせ更新</a></p>
+						<p class="card-text mt-2">2019.05.25 &emsp;<a href="#" class="">お知らせ更新</a></p>
+						<button class="btn btn-dark">NEWS一覧</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- contact -->
+		<div class="contact fadein" id="contact">
+			<strong><h2>CONTACT</h2>
+			<p>ご意見・ご質問など、お問い合わせは、下記フォームからお願いいたします。</p>
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-outline-dark contactForm" data-toggle="modal" data-target="#exampleModalCenter">
+			CONTACT FORM
+			</button></strong>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title" id="exampleModalLongTitle">CONTACT</h2>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Name</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="NAMAE">
+								<div class="form-group">
+									<label for="exampleInputEmail1">Mailadress</label>
+									<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="info@example.com">
+								</div>
+								<div class="form-group">
+									<label for="exampleFormControlTextarea1">Message</label>
+									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+								</div>
+							</div>
+						</form>
+					</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Send</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		<!-- fotter -->
+		<footer class="fixed-bottom">
+			<p>(c)copy right</p>
+		</footer>
+
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="bootstrap.js"></script>
+		<script src="app.js"></script>
 </body>
 </html>
